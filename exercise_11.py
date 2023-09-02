@@ -10,4 +10,4 @@ test_list = [1, 2, 3, 4]
 result = get_unique_elements(test_list)
 print(result)
 
-#used chatgpt for help
+#used chatgpt to help
