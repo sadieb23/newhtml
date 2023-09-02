@@ -17,3 +17,5 @@ for i in range(5):
 
 # Print the resulting sum
 print("Your sum is ", total_sum)
+ 
+ #used chatgpt to help
