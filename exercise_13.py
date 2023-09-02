@@ -23,4 +23,4 @@ letter_count_dict = count_letters(user_input)
 # Print the resulting dictionary
 print(letter_count_dict)
 
-#used chatgpt to help
+#used chatgpt for help
