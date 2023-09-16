@@ -1,0 +1,12 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightgray;
+}
+
+#main-title {
+    text-align: center;
+}
+
+.content {
+    margin-bottom: 12px;
+}

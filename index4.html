@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Calculator</title>
+</head>
+<body>
+    <input type="text" id="txt-price" placeholder="Enter the price of the item">
+    <input type="text" id="txt-quantity" placeholder="Enter the quantity of the item">
+    <button id="btn-submit">Calculate</button>
+    <div id="output"></div>
+
+    <script>
+        // Get references to HTML elements
+        var priceInput = document.getElementById('txt-price');
+        var quantityInput = document.getElementById('txt-quantity');
+        var submitBtn = document.getElementById('btn-submit');
+        var output = document.getElementById('output');
+
+        // Add an event listener to the Calculate button
+        submitBtn.addEventListener('click', function () {
+            // Get the price and quantity input values
+            var price = priceInput.value;
+            var quantity = quantityInput.value;
+
+            // Convert inputs to numbers
+            price = +price;
+            quantity = +quantity;
+
+            // Check for invalid inputs
+            if (Number.isNaN(price) || Number.isNaN(quantity)) {
+                output.innerHTML = 'Invalid input';
+                return;
+            }
+
+            // Calculate the total price and round it to two decimal places
+            var totalPrice = price * quantity;
+            totalPrice = Math.round(totalPrice * 100) / 100;
+
+            // Display the result in the output div
+            output.innerHTML = quantity + ' items at $' + price + ' each is $' + totalPrice;
+        });
+    </script>
+</body>
+</html>
+<!--used chatgpt for help-->
